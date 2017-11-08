@@ -68,7 +68,7 @@
     NSLog(@"[ViewController] reader manager authenticated");
   } else {
     NSLog(@"[ViewController] reader manager NOT authenticated");
-    [[PhotonManager sharedManager] loginWithUser:@"ksk@ieee.org" password:@"jT6nD8>n7R4>CgJQ"];
+    [[PhotonManager sharedManager] loginWithUser:@"ksk@ieee.org" password:@"xxxx"];
   }
   if ([[PhotonManager sharedManager] isAuthenticated]) {
     [self getDevice];
