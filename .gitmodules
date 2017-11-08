@@ -1,0 +1,6 @@
+[submodule "Carthage/Checkouts/spark-sdk-ios"]
+	path = Carthage/Checkouts/spark-sdk-ios
+	url = https://github.com/spark/spark-sdk-ios.git
+[submodule "Carthage/Checkouts/AFNetworking"]
+	path = Carthage/Checkouts/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git

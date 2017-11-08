@@ -13,7 +13,27 @@
 		7A0B428D1FB2E52400348895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0B428C1FB2E52400348895 /* Assets.xcassets */; };
 		7A0B42901FB2E52400348895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0B428E1FB2E52400348895 /* LaunchScreen.storyboard */; };
 		7A0B42931FB2E52400348895 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0B42921FB2E52400348895 /* main.m */; };
+		7A0B429B1FB2E5D400348895 /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0B42991FB2E5D300348895 /* ParticleSDK.framework */; };
+		7A0B429D1FB2E5DA00348895 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0B429A1FB2E5D400348895 /* AFNetworking.framework */; };
+		7A0B429E1FB2E5DA00348895 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0B429A1FB2E5D400348895 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A0B42A11FB2E5DF00348895 /* ParticleSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0B42991FB2E5D300348895 /* ParticleSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A0B42A51FB2E73C00348895 /* PhotonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0B42A31FB2E73C00348895 /* PhotonManager.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A0B429F1FB2E5DA00348895 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7A0B429E1FB2E5DA00348895 /* AFNetworking.framework in Embed Frameworks */,
+				7A0B42A11FB2E5DF00348895 /* ParticleSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7A0B42801FB2E52400348895 /* HackEDbeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackEDbeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +46,10 @@
 		7A0B428F1FB2E52400348895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A0B42911FB2E52400348895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A0B42921FB2E52400348895 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A0B42991FB2E5D300348895 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
+		7A0B429A1FB2E5D400348895 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		7A0B42A31FB2E73C00348895 /* PhotonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotonManager.m; sourceTree = "<group>"; };
+		7A0B42A41FB2E73C00348895 /* PhotonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotonManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0B429B1FB2E5D400348895 /* ParticleSDK.framework in Frameworks */,
+				7A0B429D1FB2E5DA00348895 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +70,8 @@
 			children = (
 				7A0B42821FB2E52400348895 /* HackEDbeta */,
 				7A0B42811FB2E52400348895 /* Products */,
+				7A0B429A1FB2E5D400348895 /* AFNetworking.framework */,
+				7A0B42991FB2E5D300348895 /* ParticleSDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +86,7 @@
 		7A0B42821FB2E52400348895 /* HackEDbeta */ = {
 			isa = PBXGroup;
 			children = (
+				7A0B42A21FB2E72D00348895 /* Model */,
 				7A0B42831FB2E52400348895 /* AppDelegate.h */,
 				7A0B42841FB2E52400348895 /* AppDelegate.m */,
 				7A0B42861FB2E52400348895 /* ViewController.h */,
@@ -71,6 +100,15 @@
 			path = HackEDbeta;
 			sourceTree = "<group>";
 		};
+		7A0B42A21FB2E72D00348895 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A0B42A41FB2E73C00348895 /* PhotonManager.h */,
+				7A0B42A31FB2E73C00348895 /* PhotonManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +119,7 @@
 				7A0B427C1FB2E52400348895 /* Sources */,
 				7A0B427D1FB2E52400348895 /* Frameworks */,
 				7A0B427E1FB2E52400348895 /* Resources */,
+				7A0B429F1FB2E5DA00348895 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0B42881FB2E52400348895 /* ViewController.m in Sources */,
+				7A0B42A51FB2E73C00348895 /* PhotonManager.m in Sources */,
 				7A0B42931FB2E52400348895 /* main.m in Sources */,
 				7A0B42851FB2E52400348895 /* AppDelegate.m in Sources */,
 			);
@@ -280,6 +320,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44LSRGLNFM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HackEDbeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.techconficio.HackEDbeta;
@@ -294,6 +338,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44LSRGLNFM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HackEDbeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.techconficio.HackEDbeta;
