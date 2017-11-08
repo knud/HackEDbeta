@@ -1,6 +1,6 @@
 //
 //  PhotonManager.m
-//  Odin PoC
+//  HackEDbeta
 //
 //  Created by Knud S Knudsen on 2017-03-08.
 //  Copyright © 2017 TechConficio. All rights reserved.
